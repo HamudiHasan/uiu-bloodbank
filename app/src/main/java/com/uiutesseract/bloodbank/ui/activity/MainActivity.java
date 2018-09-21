@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.uiutesseract.bloodbank.R;
 
+// b-Hero
 public class MainActivity extends AppCompatActivity {
 
     @Override
