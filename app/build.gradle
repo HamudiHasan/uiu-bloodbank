@@ -67,4 +67,5 @@ dependencies {
     implementation 'com.mcxiaoke.volley:library:1.0.19'
 
     implementation 'jp.wasabeef:blurry:2.1.1'
+    implementation 'com.google.android.gms:play-services-ads:17.1.3'
 }
