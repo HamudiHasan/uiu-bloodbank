@@ -26,13 +26,14 @@ dependencies {
     // for.jar  lib files
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     // test dependencies
+    implementation 'com.android.support:appcompat-v7:27.1.1'
 //    implementation 'com.android.support:support-v4:27.1.1'
     testImplementation 'junit:junit:4.12'
     //noinspection GradleCompatible
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 // basic dependencies
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+//    implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.android.support:recyclerview-v7:27.1.0'
     implementation 'com.android.support:cardview-v7:27.1.0'
@@ -67,5 +68,4 @@ dependencies {
     implementation 'com.mcxiaoke.volley:library:1.0.19'
 
     implementation 'jp.wasabeef:blurry:2.1.1'
-    implementation 'com.google.android.gms:play-services-ads:17.1.3'
 }
