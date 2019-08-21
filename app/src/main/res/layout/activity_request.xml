@@ -6,4 +6,211 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.RequestActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:background="@drawable/ic_backgroung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#d4fd5667"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="B (+ve)"
+                                    android:textColor="#FFF"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Blood Group"
+                                    android:textColor="#FFF"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Raise Request For"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:text="Self"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:text="Other"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <Space
+                android:layout_height="10dp"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:text="Patient Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:padding="10dp"
+                android:minHeight="36dp"
+                android:background="@drawable/round_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_height="10dp"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:text="Relation With Patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:padding="10dp"
+                android:minHeight="36dp"
+                android:background="@drawable/round_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_height="10dp"
+                android:layout_width="match_parent" />
+            <TextView
+                android:text="Request For"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:text="Platelets"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:text="Blood"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <Space
+                android:layout_height="10dp"
+                android:layout_width="match_parent" />
+            <TextView
+                android:text="Number of blood Unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:text="Max : 4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textAlignment="center"
+                    android:text="Needed : 2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <SeekBar
+                android:progress="50"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_marginTop="16dp"
+                android:textColor="#FFF"
+                android:text="Request"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
