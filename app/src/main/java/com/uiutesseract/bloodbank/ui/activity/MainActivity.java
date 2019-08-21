@@ -1,6 +1,7 @@
 package com.uiutesseract.bloodbank.ui.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -32,6 +33,13 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
 
         // set Drawer for others options
         setDrawer();
+
+        findViewById(R.id.btn_find_main).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,FindDonorActivity.class));
+            }
+        });
     }
     /**
      * Set navigation Drawer
